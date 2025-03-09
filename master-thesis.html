@@ -1,6 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="en">
-<head>
+    <head>
            <!-- meta data -->
            <meta charset="utf-8">
            <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -73,10 +73,18 @@
                     <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
                         <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
                         <li class=" smooth-menu active"></li>
-                        <li class="smooth-menu"><a href="index.html#skills">Skills</a></li>
-                        <li class="smooth-menu"><a href="index.html#experience">Experience</a></li>
-                        <li class="smooth-menu"><a href="/#portfolio">Portfolio</a></li>
-                        <li class="smooth-menu"><a href="/index.html#skills">About me / Contact</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#portofolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#about">About Me / Contact</a>
+                        </li>
                             
                         </ul><!--/.nav -->
                     </div><!-- /.navbar-collapse -->
@@ -90,26 +98,48 @@
     </header><!-- /.top-area-->
     
     <!-- Portfolio Item Page Content -->
-    <section id="portfolio-detail">
-        <div class="container">
-            <div class="portfolio-detail-content">
-                <div class="section-heading text-center">
-                    <h2>Master Thesis</h2>
+    section id="portfolio-detail">
+    <div class="container">
+        <div class="portfolio-detail-content">
+            <div class="section-heading text-center">
+                <h2>Master Thesis</h2>
+            </div>
+            
+            <!-- Eerste rij: Afbeelding + eerste tekst -->
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assets/images/portfolio/masterproef_main.png" alt="Master Thesis" class="img-fluid"/>
                 </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <img src="assets/images/portfolio/p4.jpg" alt="Master Thesis" />
-                    </div>
-                    <div class="col-md-6">
-                        <p>
-                            <!-- Description of the Master Thesis here -->
-                            This is where you can explain all the details about your Master Thesis project.
-                        </p>
-                    </div>
+                <div class="col-md-6">
+                    <p>
+                        This thesis investigates the development and implementation of a monitoring system to effectively
+                        map the climate in the barns of Voeders Denys - Decadt. The increasing importance of barn
+                        climate to livestock health and welfare is the impetus for this research. The primary goal of this
+                        research is to design a robust system to accurately detect negative changes in barn climate so
+                        that the livestock farmer can proactively anticipate. A study of potential parameters that harm
+                        livestock health is being conducted. Here, temperature, relative humidity, CO2, and NH3 are identified as
+                        important parameters.
+                    </p>
                 </div>
             </div>
+
+            <!-- Tweede rij: Tweede tekst onder de afbeelding -->
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <p>
+                        This is followed by a search for the most appropriate sensors to accurately
+                        map the various parameters. The implementation of an IoT system, which combines the appropriate
+                        sensors with a suitable communication protocol, is essential to detect negative changes in the barn
+                        climate, allowing real-time anticipation. By using a wireless communication protocol, the need
+                        for cables disappears, and the system can be attached anywhere in the barn. BLE Coded PHY is
+                        used as the communication protocol because of its low power consumption and required distance.
+                    </p>
+                </div>
+            </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
     <!--footer-copyright start-->
 		<footer id="footer-copyright" class="footer-copyright">
